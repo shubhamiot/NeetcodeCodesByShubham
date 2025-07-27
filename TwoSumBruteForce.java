@@ -1,4 +1,4 @@
-public class TwoSum {
+public class TwoSumBruteForce {
 
 
     public static int[] twoSum(int[] arr, int target){
