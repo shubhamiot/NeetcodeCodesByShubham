@@ -3,22 +3,6 @@ import java.util.Stack;
 
 public class NextGreaterElement {
 
-    private static NextGreaterElement n ;
-    private NextGreaterElement(){
-
-    }
-
-    public static NextGreaterElement getInstance(){
-        if( n== null){
-            synchronized (NextGreaterElement.class){
-                if(n==null){
-                    n = new NextGreaterElement();
-                }
-            }
-        }
-        return n;
-    }
-
     public static void main(String[] args) {
         int[] arr = {5,7,1,2,6,0};
         int[] ints = nextElement(arr);
