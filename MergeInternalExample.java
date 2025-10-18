@@ -6,7 +6,7 @@ import java.util.List;
 public class MergeInternalExample {
 
     public static void main(String[] args) {
-        int[][] interval = {{1,3},{2,6},{8,10},{15,8}};
+            int[][] interval = {{1,3},{8,10},{2,6},{15,18}};
         int[][] ints = mergeInterval(interval);
         for(int[] i : ints){
             System.out.println(Arrays.toString(i));
@@ -24,7 +24,7 @@ public class MergeInternalExample {
         result.add(newInterval);
         for(int[] interval : intervals){
             if(interval[0]<=newInterval[1]){
-                newInterval[1]= Math.max(newInterval[1], interval[0]);
+                newInterval[1]= Math.max(newInterval[1], interval[1]);
             }else{
                 newInterval= interval;
                 result.add(newInterval);
